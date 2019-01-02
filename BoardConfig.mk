@@ -24,18 +24,18 @@
 -include device/motorola/msm8960-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/motorola/xt907/BoardConfigVendor.mk
+-include vendor/motorola/xt907_jbbl/BoardConfigVendor.mk
 
-LOCAL_PATH := device/motorola/xt907
+LOCAL_PATH := device/motorola/xt907_jbbl
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := xt907,scorpion_mini,smq
+TARGET_OTA_ASSERT_DEVICE := xt907_jbbl,scorpion_mini,smq
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 # Recovery
-TARGET_RECOVERY_DEVICE_DIRS := device/motorola/xt907
+TARGET_RECOVERY_DEVICE_DIRS := device/motorola/xt907_jbbl
 
 # Storage
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1560281088

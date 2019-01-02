@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# This file includes all definitions that apply to ALL xt907 devices, and
-# are also specific to xt907 devices
+# This file includes all definitions that apply to ALL xt907_jbbl devices, and
+# are also specific to xt907_jbbl devices
 #
 # Everything in this directory will become public
 
@@ -25,9 +25,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 $(call inherit-product, device/motorola/msm8960-common/msm8960.mk)
 
-LOCAL_PATH := device/motorola/xt907
+LOCAL_PATH := device/motorola/xt907_jbbl
 
-# xt907 specific overlay
+# xt907_jbbl specific overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_AAPT_CONFIG := normal
@@ -50,7 +50,7 @@ PRODUCT_COPY_FILES += \
     device/motorola/qcom-common/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc \
     device/motorola/qcom-common/idc/evfwd.idc:system/usr/idc/evfwd.idc \
     device/motorola/qcom-common/idc/atmxt-i2c.idc:recovery/root/vendor/firmware/atmxt-i2c.idc \
-    vendor/motorola/xt907/proprietary/etc/firmware/atmxt-r2.tdat:recovery/root/vendor/firmware/atmxt-r2.tdat
+    vendor/motorola/xt907_jbbl/proprietary/etc/firmware/atmxt-r2.tdat:recovery/root/vendor/firmware/atmxt-r2.tdat
 
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -86,4 +86,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, device/motorola/qcom-common/keychars/keychars.mk)
 $(call inherit-product, device/motorola/qcom-common/keylayout/keylayout.mk)
 $(call inherit-product, device/motorola/qcom-common/modules/nfc/nfc.mk)
-$(call inherit-product, vendor/motorola/xt907/xt907-vendor.mk)
+$(call inherit-product, vendor/motorola/xt907_jbbl/xt907_jbbl-vendor.mk)

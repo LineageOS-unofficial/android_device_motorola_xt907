@@ -11,11 +11,11 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 960
 TARGET_SCREEN_WIDTH := 540
 
-PRODUCT_NAME := lineage_xt907
+PRODUCT_NAME := lineage_xt907_jbbl
 TARGET_VENDOR_PRODUCT_NAME := XT907_verizon
 TARGET_VENDOR_DEVICE_NAME := scorpion_mini
 
-$(call inherit-product, device/motorola/xt907/full_xt907.mk)
+$(call inherit-product, device/motorola/xt907_jbbl/full_xt907_jbbl.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=motorola/XT907_verizon/scorpion_mini:4.4.2/KDA20.62-15.1/15:user/release-keys \
