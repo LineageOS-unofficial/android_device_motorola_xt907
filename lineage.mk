@@ -16,7 +16,3 @@ TARGET_VENDOR_PRODUCT_NAME := XT907_verizon
 TARGET_VENDOR_DEVICE_NAME := scorpion_mini
 
 $(call inherit-product, device/motorola/xt907_jbbl/full_xt907_jbbl.mk)
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=motorola/XT907_verizon/scorpion_mini:4.4.2/KDA20.62-15.1/15:user/release-keys \
-    PRIVATE_BUILD_DESC="smq_vzw-user 4.4.2 KDA20.62-15.1 15 release-keys"
