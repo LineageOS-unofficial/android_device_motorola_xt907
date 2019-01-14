@@ -37,6 +37,10 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_PACKAGES += \
     unlock-us-gsm
 
+# NFC
+PRODUCT_PACKAGES += \
+    nfc.msm8960
+
 # Audio configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x
