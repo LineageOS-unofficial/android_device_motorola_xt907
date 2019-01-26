@@ -19,8 +19,6 @@
 #
 # Everything in this directory will become public
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
 $(call inherit-product, device/motorola/msm8960_jbbl-common/msm8960.mk)
 
 LOCAL_PATH := device/motorola/xt907_jbbl
